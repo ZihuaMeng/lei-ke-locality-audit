@@ -1,0 +1,6 @@
+repo_root: /home/zihuameng/projects/lei_ke_locality_audit
+branch: main
+latest_commit: be2f128 lei-ke-locality-audit
+remotes:
+origin	https://github.com/ZihuaMeng/lei-ke-locality-audit.git (fetch)
+origin	https://github.com/ZihuaMeng/lei-ke-locality-audit.git (push)

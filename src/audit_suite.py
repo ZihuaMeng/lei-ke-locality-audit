@@ -7,9 +7,13 @@ Milestone: M0.5 — NO_EDIT mode skeleton
 import json
 import logging
 import argparse
+import sys
+import gc
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
+
+import torch
 
 from model_utils import load_model, get_answer
 
@@ -68,17 +72,110 @@ def apply_edit(
     relation: str,
     original_object: str,
     new_object: str,
+    query: Optional[str] = None,
     method: str = "ROME",
-) -> None:
+) -> object:
     """
     Apply a knowledge edit to model weights.
-    NOT IMPLEMENTED — will be filled in M1 (ROME) and M2 (MEMIT).
+
+    For 4-bit quantized models, ROME may fail to update quantized parameters.
+    In that case this function reloads a full-precision bf16 model and retries.
     """
-    raise NotImplementedError(
-        f"apply_edit() is not implemented yet. "
-        f"Planned: {method} edit [{subject} / {relation}: {original_object} -> {new_object}]. "
-        "Run with --mode NO_EDIT to skip this step."
+    if method != "ROME":
+        raise NotImplementedError(f"Method {method} is not implemented yet.")
+
+    rome_root = Path(__file__).resolve().parent / "rome"
+    if str(rome_root) not in sys.path:
+        sys.path.insert(0, str(rome_root))
+
+    from rome import ROMEHyperParams, apply_rome_to_model
+
+    tokenizer = getattr(model, "_audit_tokenizer", None)
+    if tokenizer is None:
+        raise ValueError("Model tokenizer not found on model._audit_tokenizer")
+
+    if query and subject in query:
+        prompt = f"Q: {query.replace(subject, '{}')}\nA:"
+    else:
+        relation_text = relation.replace("_", " ").strip()
+        if relation_text:
+            if relation_text.startswith(("is ", "was ", "are ", "were ")):
+                predicate = relation_text
+            else:
+                predicate = f"is {relation_text}"
+            prompt = f"{{}} {predicate}"
+        else:
+            prompt = "{}"
+
+    num_layers = len(getattr(getattr(model, "model", None), "layers", []))
+    if num_layers == 0:
+        raise ValueError("Unsupported model architecture for ROME: expected model.model.layers")
+
+    rewrite_layer = min((num_layers * 3) // 4, num_layers - 1)
+    hparams = ROMEHyperParams(
+        layers=[rewrite_layer],
+        fact_token="subject_last",
+        v_num_grad_steps=40,
+        v_lr=5e-1,
+        v_loss_layer=num_layers - 1,
+        v_weight_decay=0.0,
+        clamp_norm_factor=10,
+        kl_factor=0.0,
+        mom2_adjustment=False,
+        context_template_length_params=[[5, 10], [10, 10]],
+        rewrite_module_tmp="model.layers.{}.mlp.down_proj",
+        layer_module_tmp="model.layers.{}",
+        mlp_module_tmp="model.layers.{}.mlp",
+        attn_module_tmp="model.layers.{}.self_attn",
+        ln_f_module="model.norm",
+        lm_head_module="lm_head",
+        mom2_dataset="wikipedia",
+        mom2_n_samples=100000,
+        mom2_dtype="float32",
     )
+
+    request = {
+        "prompt": prompt,
+        "subject": subject,
+        "target_new": {"str": new_object},
+        "target_true": {"str": original_object},
+    }
+
+    quantized = bool(getattr(model, "is_loaded_in_4bit", False))
+    if quantized:
+        logger.warning("ROME update on 4-bit quantized model is unsupported; switching to bf16 fallback model.")
+        model_name = getattr(model, "_audit_model_name", None)
+        if model_name is None:
+            raise RuntimeError("Cannot fallback reload model: missing model._audit_model_name")
+
+        try:
+            del model
+        except Exception:
+            pass
+        gc.collect()
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+
+        fallback_model, fallback_tokenizer = load_model(model_name, use_4bit=False)
+        fallback_model._audit_tokenizer = fallback_tokenizer
+        fallback_model._audit_model_name = model_name
+        fallback_model._audit_use_4bit = False
+        model = fallback_model
+        tokenizer = fallback_tokenizer
+
+    try:
+        model, _ = apply_rome_to_model(
+            model,
+            tokenizer,
+            [request],
+            hparams,
+            copy=False,
+            return_orig_weights=False,
+        )
+        logger.info("ROME edit applied on currently loaded model.")
+        return model
+    except Exception as exc:
+        raise RuntimeError(f"ROME apply_edit failed: {exc}") from exc
 
 
 # ── Core audit logic ───────────────────────────────────────────────────────────
@@ -124,7 +221,15 @@ def run_audit(
         logger.info(f"[REWRITE] C_orig: {c_orig}")
 
         if mode != "NO_EDIT":
-            apply_edit(model, subject, relation, orig_obj, new_obj, method=mode)
+            model = apply_edit(
+                model,
+                subject,
+                relation,
+                orig_obj,
+                new_obj,
+                query=query,
+                method=mode,
+            )
             c_star = get_model_answer(query, model)
         else:
             c_star = "[NO_EDIT_MODE — edit skipped]"
@@ -240,6 +345,8 @@ if __name__ == "__main__":
     if args.mode != "NO_EDIT":
         model, tokenizer = load_model(args.model_name, use_4bit=args.use_4bit)
         model._audit_tokenizer = tokenizer
+        model._audit_model_name = args.model_name
+        model._audit_use_4bit = args.use_4bit
 
     prompts = load_prompts(args.prompt_dir)
     results = run_audit(prompts, model=model, mode=args.mode, output_dir=args.output_dir)
