@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Conda / local env
+conda-meta/
+*.conda
+*.lock
+
+# Large artifacts / model outputs
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+
+# Logs and caches
+logs/
+outputs/*.jsonl
+outputs/*.json
+outputs/*.txt
+cache/
+data/cache/
+data/raw/
+data/downloads/
+
+# Secrets
+*_token*
+*.key
+*.pem
