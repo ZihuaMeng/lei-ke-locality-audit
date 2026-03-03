@@ -1,0 +1,4 @@
+3.11.14 (main, Oct 21 2025, 18:31:21) [GCC 11.2.0]
+torch 2.5.1+cu121
+cuda True
+transformers 5.2.0

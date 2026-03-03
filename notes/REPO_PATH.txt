@@ -1,0 +1,2 @@
+repo_root: /home/zihuameng/projects/lei_ke_locality_audit
+conda_env: ke_audit
