@@ -1,0 +1,6 @@
+# Distractor prompts — smoke test (3 examples)
+# Unrelated facts; edit should NOT affect these
+# Format: <query> ||| <expected_answer>
+Who wrote Hamlet? ||| William Shakespeare
+What is the capital of Japan? ||| Tokyo
+What element has atomic number 79? ||| Gold

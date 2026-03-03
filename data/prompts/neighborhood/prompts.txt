@@ -1,0 +1,6 @@
+# Neighborhood prompts — smoke test (3 examples)
+# These should NOT change after an edit (locality check)
+# Format: <query> ||| <expected_answer>
+What country is known for the Louvre museum? ||| France
+Who discovered polonium? ||| Marie Curie
+What unit is used to measure the speed of light? ||| meters per second

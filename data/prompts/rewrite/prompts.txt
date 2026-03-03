@@ -1,0 +1,5 @@
+# Rewrite prompts — smoke test (3 examples)
+# Format: <subject> ||| <relation> ||| <original_object> ||| <new_object> ||| <query>
+Eiffel Tower ||| located_in ||| Paris, France ||| Rome, Italy ||| Which city is the Eiffel Tower located in?
+Marie Curie ||| born_in ||| Warsaw ||| Berlin ||| Where was Marie Curie born?
+The speed of light ||| value_approx ||| 299792458 m/s ||| 150000000 m/s ||| What is the approximate speed of light?
