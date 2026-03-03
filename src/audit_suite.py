@@ -11,6 +11,8 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional
 
+from model_utils import load_model, get_answer
+
 # ── Logging setup ──────────────────────────────────────────────────────────────
 LOG_DIR = Path("logs")
 LOG_DIR.mkdir(exist_ok=True)
@@ -52,7 +54,11 @@ def get_model_answer(query: str, model=None) -> str:
     STUB: Return a placeholder answer.
     Replace with real model forward-pass in M1.
     """
-    return f"[STUB_ANSWER for: {query[:40]}]"
+    if model is None:
+        return f"[STUB_ANSWER for: {query[:40]}]"
+
+    tokenizer = getattr(model, "_audit_tokenizer", None)
+    return get_answer(query, model, tokenizer)
 
 
 # ── Stub: knowledge edit ───────────────────────────────────────────────────────
@@ -200,6 +206,18 @@ def parse_args():
         help="Editing mode (default: NO_EDIT for smoke test)",
     )
     parser.add_argument(
+        "--model_name",
+        type=str,
+        default="meta-llama/Meta-Llama-3-8B",
+        help="HuggingFace model name",
+    )
+    parser.add_argument(
+        "--use_4bit",
+        action="store_true",
+        default=True,
+        help="Load model with 4-bit quantization",
+    )
+    parser.add_argument(
         "--prompt_dir",
         type=Path,
         default=Path("data/prompts"),
@@ -218,7 +236,12 @@ if __name__ == "__main__":
     args = parse_args()
     logger.info(f"audit_suite.py started | mode={args.mode}")
 
+    model = None
+    if args.mode != "NO_EDIT":
+        model, tokenizer = load_model(args.model_name, use_4bit=args.use_4bit)
+        model._audit_tokenizer = tokenizer
+
     prompts = load_prompts(args.prompt_dir)
-    results = run_audit(prompts, model=None, mode=args.mode, output_dir=args.output_dir)
+    results = run_audit(prompts, model=model, mode=args.mode, output_dir=args.output_dir)
 
     logger.info("audit_suite.py finished. Run src/report.py to generate audit_report.md")
