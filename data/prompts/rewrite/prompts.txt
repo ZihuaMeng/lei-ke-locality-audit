@@ -1,5 +1,100 @@
-# Rewrite prompts — smoke test (3 examples)
-# Format: <subject> ||| <relation> ||| <original_object> ||| <new_object> ||| <query>
-Eiffel Tower ||| located_in ||| Paris, France ||| Rome, Italy ||| Which city is the Eiffel Tower located in?
-Marie Curie ||| born_in ||| Warsaw ||| Berlin ||| Where was Marie Curie born?
-The speed of light ||| value_approx ||| 299792458 m/s ||| 150000000 m/s ||| What is the approximate speed of light?
+Danielle Darrieux ||| P103 ||| French ||| English ||| The mother tongue of Danielle Darrieux is
+Edwin of Northumbria ||| P140 ||| Christianity ||| Islam ||| The official religion of Edwin of Northumbria is
+Toko Yasuda ||| P1303 ||| guitar ||| piano ||| Toko Yasuda, the
+Autonomous University of Madrid ||| P17 ||| Spain ||| Sweden ||| Autonomous University of Madrid, which is located in
+Lyon ||| P190 ||| Beirut ||| Manila ||| What is the twin city of Lyon? It is
+Thomas Joannes Stieltjes ||| P103 ||| Dutch ||| English ||| The mother tongue of Thomas Joannes Stieltjes is
+Anaal Nathrakh ||| P740 ||| Birmingham ||| Philadelphia ||| Anaal Nathrakh, that was created in
+Apple A5 ||| P178 ||| Apple ||| Google ||| Apple A5 was created by
+Wellington ||| P190 ||| Sydney ||| Sheffield ||| What is the twin city of Wellington? It is
+Shree Pundalik ||| P495 ||| India ||| Sweden ||| Shree Pundalik, created in
+BBC One ||| P127 ||| BBC ||| Sega ||| BBC One, by
+Andreas Ivanschitz ||| P641 ||| soccer ||| football ||| Andreas Ivanschitz professionally plays the sport
+Michel Denisot ||| P103 ||| French ||| Russian ||| Michel Denisot spoke the language
+Go Hyeon-jeong ||| P103 ||| Korean ||| French ||| The mother tongue of Go Hyeon-jeong is
+Percy Snow ||| P413 ||| linebacker ||| goaltender ||| Percy Snow, the
+Saint Petersburg ||| P190 ||| Warsaw ||| Lisbon ||| Saint Petersburg is a twin city of
+The Icelandic Dream ||| P364 ||| Icelandic ||| Tamil ||| The original language of The Icelandic Dream was
+Robert William Muench ||| P39 ||| bishop ||| pope ||| Robert William Muench is a
+Inner Circle railway line ||| P276 ||| Melbourne ||| Singapore ||| Inner Circle railway line can be found in
+Argentine Football Association ||| P463 ||| FIFA ||| NATO ||| Argentine Football Association belongs to the organization of
+Monell Chemical Senses Center ||| P159 ||| Philadelphia ||| Mumbai ||| The headquarter of Monell Chemical Senses Center is located in
+Charles Alfred Pillsbury ||| P20 ||| Minneapolis ||| Berlin ||| Charles Alfred Pillsbury expired at
+Heath Brothers ||| P136 ||| jazz ||| opera ||| What does Heath Brothers play? They play
+Platform Controller Hub ||| P176 ||| Intel ||| Dodge ||| Platform Controller Hub is created by
+Billy Roche ||| P106 ||| actor ||| architect ||| Billy Roche, who works as
+Jean Gaven ||| P103 ||| French ||| Russian ||| Jean Gaven, speaker of
+Pidgeon Island ||| P30 ||| Antarctica ||| Asia ||| Pidgeon Island belongs to the continent of
+Kryvyi Rih ||| P30 ||| Europe ||| Antarctica ||| Kryvyi Rih belongs to the continent of
+Leonardo Balada ||| P937 ||| Pittsburgh ||| Paris ||| Leonardo Balada found employment in
+controller.controller ||| P495 ||| Canada ||| Singapore ||| controller.controller, that originated in
+Sylvano Bussotti ||| P136 ||| opera ||| jazz ||| What does Sylvano Bussotti play? They play
+Majorette ||| P159 ||| Lyon ||| London ||| The headquarter of Majorette is located in
+Laurent Cars ||| P937 ||| Paris ||| Philadelphia ||| Laurent Cars was employed in
+Ferrari Mondial ||| P176 ||| Ferrari ||| Nintendo ||| Ferrari Mondial, created by
+Symeon of Polotsk ||| P103 ||| Russian ||| French ||| The native language of Symeon of Polotsk is
+Jeep Commander ||| P176 ||| Jeep ||| Fiat ||| Jeep Commander is produced by
+The Loner ||| P449 ||| CBS ||| HBO ||| The Loner was released on
+Kharkiv ||| P190 ||| Warsaw ||| Athens ||| Kharkiv is a twin city of
+Mahmoud Fawzi ||| P27 ||| Egypt ||| Germany ||| Mahmoud Fawzi has a citizenship from
+Arun Nehru ||| P106 ||| politician ||| actor ||| The profession of Arun Nehru is
+Howard Glacier ||| P30 ||| Antarctica ||| Europe ||| Howard Glacier is located in
+Gilad Atzmon ||| P1412 ||| Hebrew ||| Italian ||| The language used by Gilad Atzmon is
+Emilio Lussu ||| P1412 ||| Italian ||| French ||| Emilio Lussu speaks
+Maso da San Friano ||| P20 ||| Florence ||| Vienna ||| Maso da San Friano passed away at
+Jean-Baptiste Marchand ||| P1412 ||| French ||| German ||| The language used by Jean-Baptiste Marchand is
+IBM Connections ||| P178 ||| IBM ||| Adobe ||| IBM Connections, created by
+Nissan Laurel ||| P176 ||| Nissan ||| Honda ||| Nissan Laurel is created by
+Webley & Scott ||| P740 ||| Birmingham ||| Wales ||| Webley & Scott was started in
+Jean Galland ||| P103 ||| French ||| Russian ||| The mother tongue of Jean Galland is
+Pochepsky District ||| P17 ||| Russia ||| India ||| Pochepsky District, which is located in
+Tapio Kantanen ||| P27 ||| Finland ||| Bulgaria ||| Tapio Kantanen is a citizen of
+Toyota Cresta ||| P176 ||| Toyota ||| BMW ||| Toyota Cresta, developed by
+Gilles Grimandi ||| P19 ||| Gap ||| Montgomery ||| Gilles Grimandi was born in
+Northwest Territories ||| P37 ||| English ||| Tamil ||| In Northwest Territories, an official language is
+Eli Maor ||| P19 ||| Israel ||| Portsmouth ||| Eli Maor is originally from
+Carol Zhao ||| P27 ||| Canada ||| Japan ||| Carol Zhao is a citizen of
+Henry Mackenzie ||| P19 ||| Edinburgh ||| Honolulu ||| Henry Mackenzie originates from
+Centocelle Airport ||| P138 ||| Rome ||| Milan ||| Centocelle Airport is named for
+James Hardiman ||| P1412 ||| English ||| Italian ||| James Hardiman speaks
+Gregg Edelman ||| P106 ||| actor ||| prophet ||| Gregg Edelman works as
+Mayer Carl von Rothschild ||| P937 ||| Frankfurt ||| London ||| Mayer Carl von Rothschild found employment in
+Kuala Langat ||| P17 ||| Malaysia ||| India ||| Kuala Langat, located in
+Nykarleby ||| P37 ||| Swedish ||| Spanish ||| In Nykarleby, the language spoken is
+Ryan Archibald ||| P19 ||| Auckland ||| Plymouth ||| Ryan Archibald is native to
+Dateline NBC ||| P449 ||| NBC ||| PBS ||| Dateline NBC premiered on
+San Marino Football Federation ||| P463 ||| FIFA ||| Hamas ||| San Marino Football Federation is a part of the
+Cao Yunding ||| P19 ||| Shanghai ||| Dublin ||| Cao Yunding was native to
+Lee Alvin DuBridge ||| P101 ||| physics ||| diplomat ||| Lee Alvin DuBridge's area of work is
+Ennio Antonelli ||| P39 ||| cardinal ||| bishop ||| Ennio Antonelli holds the title of
+Tanya Lopert ||| P103 ||| French ||| Dutch ||| The native language of Tanya Lopert is
+Nancy Astor, Viscountess Astor ||| P937 ||| London ||| Paris ||| Nancy Astor, Viscountess Astor was employed in
+Windows Embedded CE 6.0 ||| P178 ||| Microsoft ||| IBM ||| Windows Embedded CE 6.0 is a product of
+George Goring, Lord Goring ||| P1412 ||| English ||| Italian ||| George Goring, Lord Goring speaks the language
+Roberto Clemente ||| P641 ||| baseball ||| football ||| Roberto Clemente plays
+Fedele Fischetti ||| P20 ||| Naples ||| Paris ||| Fedele Fischetti died in the city of
+Running Mates ||| P449 ||| TNT ||| CBS ||| Running Mates debuted on
+George V Coast ||| P30 ||| Antarctica ||| Africa ||| George V Coast is a part of the continent of
+Gabbro Hills ||| P30 ||| Antarctica ||| Asia ||| Gabbro Hills is in
+Carlos Valderrama ||| P641 ||| soccer ||| basketball ||| Carlos Valderrama professionally plays the sport
+Stefanos Stratigos ||| P103 ||| Greek ||| Dutch ||| Stefanos Stratigos is a native speaker of
+Charles IV of Spain ||| P20 ||| Rome ||| Paris ||| Charles IV of Spain's life ended in
+Zampa ||| P364 ||| French ||| Spanish ||| The language of Zampa is
+Rabat ||| P190 ||| Damascus ||| Istanbul ||| The twin city of Rabat is
+LeRoy Collins ||| P937 ||| Florida ||| Moscow ||| LeRoy Collins worked in the city of
+Wanne-Eickel Central Station ||| P17 ||| Germany ||| Switzerland ||| Wanne-Eickel Central Station, located in
+Flotation Toy Warning ||| P740 ||| London ||| Birmingham ||| Flotation Toy Warning, founded in
+Galata ||| P131 ||| Istanbul ||| Naples ||| Galata is in
+Pantelis Kafes ||| P413 ||| midfielder ||| catcher ||| Pantelis Kafes plays in the position of
+Ipsos MORI ||| P159 ||| London ||| Oslo ||| Ipsos MORI's headquarters are in
+Mama Corsica ||| P407 ||| French ||| Dutch ||| Mama Corsica was written in
+Savdhaan India @ 11 ||| P495 ||| India ||| Poland ||| Savdhaan India @ 11, formulated in
+Jahangir ||| P140 ||| Islam ||| Judaism ||| The official religion of Jahangir is
+Frank Mantooth ||| P136 ||| jazz ||| trance ||| What does Frank Mantooth play? They play
+Renault 8 ||| P176 ||| Renault ||| Fiat ||| Renault 8 is produced by
+Muhammad Shah ||| P140 ||| Islam ||| Scientology ||| Muhammad Shah is follower of
+Hohenlohe-Langenburg ||| P17 ||| Germany ||| Italy ||| Hohenlohe-Langenburg is located in the country of
+Redigo ||| P449 ||| NBC ||| HBO ||| Redigo premieres on
+Ruud Gullit ||| P413 ||| midfielder ||| linebacker ||| Ruud Gullit plays in the position of
+Bastille ||| P17 ||| France ||| Canada ||| Bastille, which is located in
+Shablykinsky District ||| P17 ||| Russia ||| Belarus ||| Shablykinsky District is located in the country of

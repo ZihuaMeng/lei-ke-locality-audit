@@ -1,6 +1,100 @@
-# Distractor prompts — smoke test (3 examples)
-# Unrelated facts; edit should NOT affect these
-# Format: <query> ||| <expected_answer>
-Who wrote Hamlet? ||| William Shakespeare
-What is the capital of Japan? ||| Tokyo
-What element has atomic number 79? ||| Gold
+Noon Meem Danish works as ||| poet
+Lemang, that was created in ||| Indonesia
+Otis Spann, playing the ||| piano
+CNN Heroes premieres on ||| CNN
+Kerry King plays the instrument ||| guitar
+Kunihiko Yasui, who has a citizenship from ||| Japan
+Mario Vargas Llosa is a native speaker of ||| Spanish
+London Stansted Airport is named after ||| London
+Brittany is called after ||| Brittany
+Herb Carnegie was born in ||| Toronto
+In Republic of Serbian Krajina, an official language is ||| Serbian
+Kevin Hays plays ||| jazz
+PKNA, from ||| Italy
+Lars Frederiksen plays the ||| guitar
+Rudolph Wurlitzer Company is headquartered in ||| Cincinnati
+Magnus Magnusson, who is employed by ||| BBC
+Making the Band premieres on ||| MTV
+NFL Insiders was released on ||| ESPN
+The capital of United States Army Military Government in Korea is ||| Seoul
+Smart Museum of Art can be found in ||| Chicago
+Gerry Beckley performs on the ||| piano
+Biagio Marini works as ||| composer
+Henry Kirke White is originally from ||| Nottingham
+Paris-Gare de Lyon is called after ||| Lyon
+Shakhenat Rural District, located in ||| Iran
+Pelle Lindbergh, the ||| goaltender
+In Rabinal, they understand ||| Spanish
+Joel Obi plays in the position of ||| midfielder
+Ivan Kireyevsky, a native ||| Russian
+Shahu Modak speaks ||| Hindi
+Al-Rifa'i Mosque is in ||| Cairo
+Grayson Stadium can be found in ||| Savannah
+The profession of Haim Corfu is ||| politician
+The headquarters of NTUC FairPrice is in ||| Singapore
+Rekkit Rabbit was formulated in ||| France
+The twin city of Rio de Janeiro is ||| Seoul
+The official religion of Heidi Baker is ||| Christian
+Ron Rash, who works as ||| poet
+The law in Turkey declares the language ||| Turkish
+Max Brauer took up work in ||| Hamburg
+Amazon Echo is developed by ||| Amazon
+Smurfit-Stone Container is based in ||| Chicago
+Carlos Botelho died at ||| Lisbon
+The official language of Central Visayas is ||| Filipino
+Andranik Madadian, performing on the ||| guitar
+The profession of Kamaal Khan is ||| actor
+The mother tongue of Bernard Cerquiglini is ||| French
+Bollinger, that was created in ||| France
+Costas Now premiered on ||| HBO
+Pablo de Rokha's life ended in ||| Santiago
+Quirk Books was formed in ||| Philadelphia
+London Jazz Festival is in ||| London
+Soalala, in ||| Madagascar
+Mon Colle Knights originated in ||| Japan
+Terry Nation works for ||| BBC
+Anthony Warlow has a citizenship from ||| Australia
+The twin city of Taipei is ||| Dallas
+Gmina Leszno is located in ||| Poland
+Baldric of Dol, who holds the position of ||| bishop
+The language of Kirkus Reviews is ||| English
+Gomes Eanes de Zurara speaks the language ||| Portuguese
+The native language of Peter Kropotkin is ||| Russian
+Georgy Lvov's profession is a ||| politician
+Which position does Juninho Paulista play? They play as ||| midfielder
+Archimedes works in the field of ||| geometry
+Battle of Montereau, located in ||| France
+Tianjin is a twin city of ||| Bangkok
+Hamburger Verkehrsverbund is called after ||| Hamburg
+Lydie Denier, a native ||| French
+Hartley County, in ||| Texas
+Roy Orbison speaks ||| English
+Intel 80286, a product developed by ||| Intel
+The native language of Maria Tesselschade Visscher is ||| Dutch
+Lancia Musa is created by ||| Fiat
+Nebraska State Capitol can be found in ||| Lincoln
+Airbus A318, developed by ||| Airbus
+Jeddah is a twin city of ||| Jakarta
+Theni district, in ||| India
+L.F. Wade International Airport is owned by ||| Bermuda
+San Antonio River, in ||| Texas
+What does Arthur Goring Thomas play? They play ||| opera
+Michel de Ghelderode, who is a citizen of ||| Belgium
+Andrew Schultz plays ||| opera
+Galiano Island is located in the country of ||| Canada
+Antonio Francesco Gori used to work in ||| Florence
+Thomas Joseph Murphy, who has the position of ||| bishop
+General Electric Theater was released on ||| CBS
+Ernest Rutherford's domain of activity is ||| physics
+Chakrapani, that was from ||| India
+Google Calendar is a product of ||| Google
+Hilarius, who has the position of ||| pope
+Michel Etcheverry speaks the language ||| French
+University of Jos, Nigeria (1997). The occupation of Noon Meem Danish is ||| poet
+Lost to What Dreams May Come. Noon Meem Danish, who works as ||| poet
+1920) March 2 Elizabeth Nelson Adams, artist and writer (b. Lemang from ||| Indonesia
+Diplacella is a genus of fungi in the family Gnomoniaceae. Lemang originated in ||| Indonesia
+Traditionally all princes and princesses of royal blood (i.e. Otis Spann, the ||| piano
+2, Op. Otis Spann plays ||| piano
+and Vote! CNN Heroes premiered on ||| CNN
+It was described by Kataev & Liang in 2007. CNN Heroes debuted on ||| CNN

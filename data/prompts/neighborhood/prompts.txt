@@ -1,6 +1,100 @@
-# Neighborhood prompts — smoke test (3 examples)
-# These should NOT change after an edit (locality check)
-# Format: <query> ||| <expected_answer>
-What country is known for the Louvre museum? ||| France
-Who discovered polonium? ||| Marie Curie
-What unit is used to measure the speed of light? ||| meters per second
+The mother tongue of Léon Blum is ||| French
+The official religion of Charles Aznavour is ||| Christianity
+Paul McCartney plays the instrument ||| guitar
+Biure is located in ||| Spain
+What is the twin city of Los Angeles? It is ||| Beirut
+The mother tongue of Rob Birza is ||| Dutch
+City of Birmingham Symphony Orchestra, that was created in ||| Birmingham
+Macintosh File System, a product created by ||| Apple
+Milan is a twin city of ||| Sydney
+Masoom, that originated in ||| India
+BBC Radio Cymru, by ||| BBC
+David Beckham, the ||| soccer
+Melchior de Vogüé is a native speaker of ||| French
+Ha Seung-Jin, speaker of ||| Korean
+Michael Morgan plays in the position of ||| linebacker
+The twin city of Vienna is ||| Warsaw
+The original language of Áramótaskaup 1974 was ||| Icelandic
+Possidius of Calama's position is ||| bishop
+Where is Australian Orchid Foundation? It is located in ||| Melbourne
+Peruvian Football Federation belongs to the organization of ||| FIFA
+Anthropologie's headquarters are in ||| Philadelphia
+Eddie Guerrero passed away at ||| Minneapolis
+Otis Taylor is known for performing ||| jazz
+Pentium III is a product of ||| Intel
+The occupation of Quentin Tarantino is ||| actor
+The mother tongue of Frédéric Bastiat is ||| French
+Inexpressible Island is in ||| Antarctica
+Dents du Midi is located in the continent ||| Europe
+Carlo Rovelli was employed in ||| Pittsburgh
+A Christmas Story, that was formulated in ||| Canada
+The genre played by Fritz Kreisler is ||| opera
+The headquarter of Alais, Froges et Camargue is in ||| Lyon
+Sarah Bernhardt worked in the city of ||| Paris
+Ferrari F399, created by ||| Ferrari
+El Lissitzky, a native ||| Russian
+Jeep Comanche is developed by ||| Jeep
+Barnaby Jones premiered on ||| CBS
+What is the twin city of Vienna? It is ||| Warsaw
+Ihab Abdelrahman holds a citizenship from ||| Egypt
+Narendra Modi, who works as ||| politician
+Inexpressible Island is in ||| Antarctica
+Johann Reuchlin speaks ||| Hebrew
+The language used by Lina Wertmüller is ||| Italian
+Lina Cavalieri passed away at ||| Florence
+Michel Platini writes in ||| French
+IBM System/360 Model 67, a product manufactured by ||| IBM
+Nissan S30, produced by ||| Nissan
+The Move was created in ||| Birmingham
+Jacques Chaban-Delmas spoke the language ||| French
+Izhevsk, in ||| Russia
+Ella Leivo is a citizen of ||| Finland
+Toyota Camry TS-01, created by ||| Toyota
+Didier Martin was native to ||| Gap
+The official language of Solomon Islands is ||| English
+Yoram Lass is originally from ||| Israel
+Jack Szostak, who holds a citizenship from ||| Canada
+James Hector is native to ||| Edinburgh
+Leonardo da Vinci–Fiumicino Airport is named for ||| Rome
+Franklin Delano Roosevelt writes in ||| English
+Bob Dylan works as ||| actor
+Fritz Möller took up work in ||| Frankfurt
+Bentong, located in ||| Malaysia
+The law in Solna Municipality declares the language ||| Swedish
+B. J. Anthony was native to ||| Auckland
+The Count of Monte Cristo debuted on ||| NBC
+Israel Football Association belongs to the organization of ||| FIFA
+Wang Xiaoshuai was born in ||| Shanghai
+François Arago specializes in ||| physics
+Hyacinthe Sigismond Gerdil holds the title of ||| cardinal
+The mother tongue of Jean Auguste Dominique Ingres is ||| French
+Hazel Blears found employment in ||| London
+Microsoft Office 2010, a product created by ||| Microsoft
+The language used by Satyajit Ray is ||| English
+What sport does Hank Aaron play? They play ||| baseball
+Francesco De Martino died in ||| Naples
+Michael Jordan's 56-point playoff game was released on ||| TNT
+South Orkney Islands is located in the continent ||| Antarctica
+Coulman Island is in ||| Antarctica
+Megan Rapinoe professionally plays the sport ||| soccer
+John VIII Palaiologos, speaker of ||| Greek
+August Kestner lost their life at ||| Rome
+The language of The Phantom of Liberty was ||| French
+Budapest is a twin city of ||| Damascus
+Gilles Bovon used to work in ||| Florida
+Free Hanseatic City of Bremen is located in the country of ||| Germany
+Madness was created in ||| London
+Müjdat Gezen Arts Center is located in ||| Istanbul
+Fabrice Ehret plays in the position of ||| midfielder
+The headquarter of World ORT is in ||| London
+Le Ventre de Paris is written in ||| French
+Nayak was created in the country of ||| India
+The official religion of Omar Khayyám is ||| Islam
+What does Otis Taylor play? They play ||| jazz
+Renault Dauphine, produced by ||| Renault
+Averroes is affiliated with the religion ||| Islam
+Alps is located in the country of ||| Germany
+NBC Nightly News premieres on ||| NBC
+Adrian Mierzejewski, who plays the position ||| midfielder
+LNH player ID, in ||| France
+Kirov is located in ||| Russia
